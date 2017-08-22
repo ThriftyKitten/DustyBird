@@ -10,4 +10,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+    /** This is called when the Enter button is pushed on the main screen */
+
 }
