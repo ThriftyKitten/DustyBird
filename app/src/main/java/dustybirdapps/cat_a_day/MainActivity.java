@@ -16,10 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     /** This is called when the Enter button is pushed on the main screen */
     public void enterApp (View view) {
-        Intent intent = new Intent(this, DisplayCatActivity.class);
-        EditText editText = (EditText) findViewById(R.id.editText);
-        String message = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE, message);
+        Intent intent = new Intent(this, DisplayCat.class);
         startActivity(intent);
 
     }
