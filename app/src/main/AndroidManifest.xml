@@ -24,15 +24,13 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <!-- added cat fragment on button press -->
-        <!--
-        <activity android:name=".FragmentCat"
+        <!-- added dog activityt on button press -->
+        <activity android:name=".DisplayDog"
                   android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        -->
         <activity android:name=".DisplayDog"></activity>
     </application>
 
