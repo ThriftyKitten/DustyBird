@@ -31,7 +31,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".DisplayDog"></activity>
     </application>
 
 </manifest>
