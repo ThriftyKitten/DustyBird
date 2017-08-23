@@ -7,13 +7,17 @@
     tools:context="dustybirdapps.cat_a_day.MainActivity">
 
     <TextView
-        android:layout_width="128dp"
-        android:layout_height="41dp"
+        android:id="@+id/textView"
+        android:layout_width="135dp"
+        android:layout_height="64dp"
         android:layout_marginLeft="26dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="60dp"
         android:text="Cat a Day"
-        android:textSize="30sp"
+        android:textSize="36sp"
+        app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -23,13 +27,13 @@
         android:layout_marginBottom="32dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:onClick="enterApp"
         android:text="Enter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 </android.support.constraint.ConstraintLayout>
