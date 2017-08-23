@@ -17,6 +17,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- added cat activity for enter button -->
         <activity android:name=".DisplayCat"
                   android:parentActivityName=".MainActivity" >
             <meta-data
