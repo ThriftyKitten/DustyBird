@@ -10,7 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,12 +17,23 @@
             </intent-filter>
         </activity>
         <!-- added cat activity for enter button -->
-        <activity android:name=".DisplayCat"
+        <activity
+            android:name=".DisplayCat"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <!-- added cat fragment on button press -->
+        <!--
+        <activity android:name=".FragmentCat"
                   android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+        -->
+        <activity android:name=".DisplayDog"></activity>
     </application>
 
 </manifest>
