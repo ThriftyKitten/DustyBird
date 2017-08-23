@@ -15,6 +15,7 @@ public class DisplayCat extends AppCompatActivity {
         Intent intent = getIntent();
 
         // Capture the layout's "Picture frame" and put catimage in it
+        image = (ImageView)
 
     }
 }
