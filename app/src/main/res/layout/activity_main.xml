@@ -9,8 +9,8 @@
     <TextView
         android:layout_width="128dp"
         android:layout_height="41dp"
-        android:layout_marginLeft="26dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="137dp"
         android:text="Cat a Day"
         android:textSize="30sp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -18,18 +18,23 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="115dp"
-        android:layout_height="65dp"
-        android:layout_marginBottom="32dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="96dp"
+        android:layout_height="74dp"
         android:onClick="enterApp"
-        android:text="Enter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Cat"
+        tools:layout_editor_absoluteY="274dp"
+        tools:layout_editor_absoluteX="80dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="96dp"
+        android:layout_height="74dp"
+        android:layout_marginLeft="8dp"
+        android:onClick="enterApp"
+        android:text="Dog"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintLeft_toRightOf="@+id/button"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="274dp" />
 
 </android.support.constraint.ConstraintLayout>
