@@ -35,7 +35,8 @@
         app:layout_constraintRight_toLeftOf="@+id/button2"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:layout_constraintVertical_bias="0.674"
-        tools:text="@string/cat_button_send" />
+        tools:text="@string/cat_button_send"
+        style="?android:attr/borderlessButtonStyle" />
 
     <Button
         android:id="@+id/button2"
@@ -48,6 +49,8 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:layout_constraintVertical_bias="0.674"
-        tools:text="@string/dog_button_send" />
+        tools:text="@string/dog_button_send"
+        style="?android:attr/borderlessButtonStyle"
+        />
 
 </android.support.constraint.ConstraintLayout>
