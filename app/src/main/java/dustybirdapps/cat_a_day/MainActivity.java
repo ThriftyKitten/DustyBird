@@ -1,6 +1,8 @@
 package dustybirdapps.cat_a_day;
 
 import android.content.Intent;
+import android.icu.text.DateFormat;
+import android.icu.text.SimpleDateFormat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,10 +14,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // creating image strings on startup using DailyCounter class
-        //DailyCounter i = new DailyCounter();
-        //String counterAsString = DailyCounter.toString(i);
-        //String cat_image = "cat";
+        // combine day of year to end of cat to get cat#
+        DayOfYear day = new DayOfYear();
+        String cat_string = "cat";
+        String cat_image = cat_string + day;
 
     }
 
