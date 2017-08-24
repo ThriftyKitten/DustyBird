@@ -4,9 +4,6 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by Michael Scofield on 8/24/2017.
- */
 
 public class DailyCounter {
     public DailyCounter() {
@@ -17,3 +14,4 @@ public class DailyCounter {
     }
     private static int counter;
 }
+

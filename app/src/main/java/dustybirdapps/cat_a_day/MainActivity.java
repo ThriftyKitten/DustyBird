@@ -12,8 +12,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
+        // creating image strings on startup using DailyCounter class
+        //DailyCounter i = new DailyCounter();
+        //String counterAsString = DailyCounter.toString(i);
+        //String cat_image = "cat";
 
     }
 
