@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // combine day of year to end of cat to get cat#
+        // combine day of year to end of cat to get cat# (some number)
         DayOfYear day = new DayOfYear();
         String cat_string = "cat";
         String cat_image = cat_string + day;
