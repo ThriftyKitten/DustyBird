@@ -3,21 +3,29 @@ package dustybirdapps.cat_a_day;
 import android.content.Intent;
 import android.icu.text.DateFormat;
 import android.icu.text.SimpleDateFormat;
+import android.icu.util.Calendar;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
+    @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // combine day of year to end of cat to get cat# (some number)
-        DayOfYear day = new DayOfYear();
+        // get the day of year using calendar
+        Calendar calendar = Calendar.getInstance();
+        int day_of_year = calendar.get(Calendar.DAY_OF_YEAR);
+        // turn day of year into string
+        String day_of_year_string = Integer.toString(day_of_year);
+        // append cat and day of year string to get cat#
         String cat_string = "cat";
-        String cat_image = cat_string + day;
+        String cat_image = cat_string + day_of_year_string;
 
     }
 
