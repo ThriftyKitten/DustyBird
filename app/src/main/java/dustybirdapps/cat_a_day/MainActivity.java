@@ -15,10 +15,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // combine day of year to end of cat to get cat# (some number)
-        DayOfYear day = new DayOfYear();
-        String cat_string = "cat";
+        //DayOfYear day = new DayOfYear();
+        /** String cat_string = "cat";
         String cat_image = cat_string + day;
-
+        */
     }
 
     /** This is called when the Cat button is pushed on the main screen */
