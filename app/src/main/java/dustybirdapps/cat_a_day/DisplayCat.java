@@ -25,8 +25,8 @@ public class DisplayCat extends AppCompatActivity {
         String cat_image_string = cat_string + day_of_year_string;
 
         // need drawable resource number, finding the cat drawable resource id
-        int ResId = R.getIdentifier(cat_image_string, "drawable", getPackageName());
-        //Drawable cat_image = R.getDrawable(ResId);
+        // int ResId = R.getIdentifier(cat_image_string, "drawable", getPackageName());
+        // Drawable cat_image = R.getDrawable(ResId);
         // Capture the layout's "Picture frame" and put catimage in it
         ImageView imageView = (ImageView) findViewById(R.id.imageView);
         imageView.setImageResource(getImageId(this, cat_image_string));
