@@ -13,22 +13,20 @@ public class DisplayCat extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_cat);
 
-        // get the day of year using calendar
-        //Calendar calendar = Calendar.getInstance();
         //int day_of_year = calendar.get(Calendar.DAY_OF_YEAR);
         // turn day of year into string
 
-        String day_of_year_string = Integer.toString(day_of_year);
+        //String day_of_year_string = Integer.toString(day_of_year);
         // append cat and day of year string to get cat#
-        String cat_string = "cat";
-        String cat_image_string = cat_string + day_of_year_string;
+        //String cat_string = "cat";
+        //String cat_image_string = cat_string + day_of_year_string;
 
         // need drawable resource number, finding the cat drawable resource id
         //int ResId = R.getIdentifier(cat_image_string, "drawable", getPackageName());
         //Drawable cat_image = R.getDrawable(ResId);
         // Capture the layout's "Picture frame" and put catimage in it
-        ImageView imageView = (ImageView) findViewById(R.id.imageView);
-        imageView.setImageResource(getImageId(this, cat_image_string));
+        //ImageView imageView = (ImageView) findViewById(R.id.imageView);
+        //imageView.setImageResource(getImageId(this, cat_image_string));
 
     }
 
