@@ -13,7 +13,7 @@ android {
         jackOptions {
             enabled true
         }
-        }
+    }
     buildTypes {
         release {
             minifyEnabled false

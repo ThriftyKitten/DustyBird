@@ -25,12 +25,14 @@
                 android:value=".MainActivity" />
         </activity>
         <!-- added dog activityt on button press -->
-        <activity android:name=".DisplayDog"
-                  android:parentActivityName=".MainActivity" >
+        <activity
+            android:name=".DisplayDog"
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+        <activity android:name=".splashscreen"></activity>
     </application>
 
 </manifest>
