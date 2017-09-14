@@ -32,7 +32,26 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".splashscreen"></activity>
+        <activity
+            android:name=".splashscreen"
+            android:noHistory="true" />
+        <activity
+            android:name=".CatLoadingScreen"
+            android:noHistory="true"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".DogLoadingScreen"
+            android:noHistory="true"
+            android:parentActivityName="MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+        </activity>
     </application>
 
 </manifest>
